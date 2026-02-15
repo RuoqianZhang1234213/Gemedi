@@ -10,6 +10,8 @@ llama3-discriminator/
 llama3-discriminator_v2/
 llama3-synthetic-patient-generator/
 llama.cpp/
+medgemma-synthetic-patient-generator/
+medgemma-synthetic-patient-generator-merged/
 
 # Ignore output result directories
 results_generator/
@@ -22,3 +24,16 @@ __pycache__/
 *.bin
 *.pt
 *.ckpt
+*.safetensors
+
+# Ignore SLURM logs
+slurm-*.out
+
+# Ignore IDE config
+.idea/
+
+# Ignore Claude Code
+.claude/
+
+# Ignore merge script (experimental, deprecated)
+submit_merge.sh

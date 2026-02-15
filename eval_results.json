@@ -1,0 +1,1637 @@
+{
+  "summary": {
+    "total": 20,
+    "format_pass": 19,
+    "placeholder_pass": 19,
+    "date_logic_pass": 19,
+    "name_consistency_pass": 19,
+    "mapping_pass": 19,
+    "all_pass": 19
+  },
+  "samples": [
+    {
+      "index": 0,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Aurora Wynter.            Unit No:   5575549\n \nAdmission Date:  2025-02-25              Discharge Date:   2025-03-21\n \nDate of Birth:  1980-03-07             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. topiramate 100 mg Tablet Sig: One (1) Tablet PO DAILY \n(Daily).  \n2. sulfamethoxazole-trimethoprim 800-160 mg Tablet Sig: One (1) \nTablet PO BID (2 times a day) for 4 doses.",
+      "parsed": {
+        "filled_text": "Name:  Aurora Wynter.            Unit No:   5575549\n \nAdmission Date:  2025-02-25              Discharge Date:   2025-03-21\n \nDate of Birth:  1980-03-07             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. topiramate 100 mg Tablet Sig: One (1) Tablet PO DAILY \n(Daily).  \n2. sulfamethoxazole-trimethoprim 800-160 mg Tablet Sig: One (1) \nTablet PO BID (2 times a day) for 4 doses.\nDisp:*4 Tablet(s)* Refills:*0*\n3. Sonata 10 mg Capsule Sig: Three (3) Capsule PO at bedtime.  \n4. Savella 100 mg Tablet Sig: One (1) Tablet PO once a day.  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nPrimary: \nNephrolithiasis\nNausea/vomiting \nPain management\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nDear Thomas,\n\nThank you for allowing us to participate in your care. You were \nadmitted to Emily Nguyen for right flank pain, nausea \nand vomiting. You were found to have a kidney stones and one \nright ureter that is likely the one you passed. You were given \npain medication and IV fluids to help you pass your stone. You \nwere also started on antibiotics since your urine was positive \nfor bacteria.\n\nYou will need to follow-up with your primary care doctor as \nlisted below. \n\nWe have added the following medication to your current regimen:\n-Bactrim DS- 1 tablet twice daily for total of 3 days (ends on \nSeptember 18, 2025 \n \nFollowup Instructions:\nFollow up with Dr. Julianne Patel in 1 week to monitor progress and adjust treatment plan as needed for nephrolithiasis. Please contact our office if you experience worsening symptoms or have concerns between appointments.",
+        "pii_mappings": {
+          "Aurora Wynter": {
+            "type": "NAME"
+          },
+          "5575549": {
+            "type": "ID"
+          },
+          "2025-02-25": {
+            "type": "DATE"
+          },
+          "2025-03-21": {
+            "type": "DATE"
+          },
+          "1980-03-07": {
+            "type": "DATE"
+          },
+          "Julianne Patel": {
+            "type": "NAME"
+          },
+          "Thomas": {
+            "type": "NAME"
+          },
+          "Emily Nguyen": {
+            "type": "NAME"
+          },
+          "September 18, 2025": {
+            "type": "DATE"
+          }
+        },
+        "filled_values": [
+          "Aurora Wynter",
+          "5575549",
+          "2025-02-25",
+          "2025-03-21",
+          "1980-03-07",
+          "Julianne Patel",
+          "Julianne Patel",
+          "Thomas",
+          "Emily Nguyen",
+          "September 18, 2025"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 1,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kieran Maddox                     Unit No:   6705844\n \nAdmission Date:  2025-06-01              Discharge Date:   2025-06-07\n \nDate of Birth:  1978-04-14             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. Aspirin 81 mg PO DAILY \nRX *aspirin 81 mg 1 tablet,delayed release (Hays) by mouth \ndaily Disp #*30 Tablet Refills:*3\n2. Atorvastatin 80 mg PO DAILY \nRX *atorvastati",
+      "parsed": {
+        "filled_text": "Name:  Kieran Maddox                     Unit No:   6705844\n \nAdmission Date:  2025-06-01              Discharge Date:   2025-06-07\n \nDate of Birth:  1978-04-14             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. Aspirin 81 mg PO DAILY \nRX *aspirin 81 mg 1 tablet,delayed release (Hays) by mouth \ndaily Disp #*30 Tablet Refills:*3\n2. Atorvastatin 80 mg PO DAILY \nRX *atorvastatin 80 mg 1 tablet(s) by mouth daily before bed \nDisp #*30 Tablet Refills:*3\n3. Clopidogrel 75 mg PO DAILY \nRX *clopidogrel 75 mg 1 tablet(s) by mouth daily Disp #*30 \nTablet Refills:*3\n4. Losartan Potassium 50 mg PO DAILY \nRX *losartan 50 mg 1 tablet(s) by mouth daily Disp #*30 Tablet \nRefills:*3\n5. fenofibrate *NF* 120 mg Oral daily \nRX *fenofibrate [Fenoglide] 120 mg 1 tablet(s) by mouth daily \nDisp #*30 Tablet Refills:*3\n6. Amiodarone 400 mg PO BID \nVick mg twice daily until May 26, 2025, then 400mg daily until October 10, 2025, then 200mg daily thereafter  \nRX *amiodarone 200 mg 2 tablet(s) by mouth twice a day Disp #*60 \nTablet Refills:*1\n7. Metoprolol Succinate XL 25 mg PO DAILY \nRX *metoprolol succinate 25 mg 1 tablet extended release 24 \nhr(s) by mouth daily Disp #*30 Tablet Refills:*3\n\n \nDischarge Disposition:\nHome With Service\n \nFacility:\nVisiting Nurse Association\n \nDischarge Diagnosis:\nPrimary: Non-sustained ventricular tachycardia\nCoronary artery disease\nAcute coronary syndrome\n\n \nDischarge Condition:\nDischarge Condition: Stable\nMental Status: Alert and Oriented x3, at baseline\nAmbulatory Status: Ambulating well\n\n \nDischarge Instructions:\nDear Mr. Maddox,\nIt was a pleasure taking part in your care at Southside Regional Hospital.  You were \nadmitted to Lisa Rodriguez because you had an abnormal heart rhythm noted \nafter your cardiac catheterization, called \"ventricular \ntachycardia.\" You were monitored while in the hospital and noted \nto have multiple episodes of this rhythm. You were seen by the \nelectrophysiology team (a team that treats abnormal heart \nrhythms), and they felt that you were stable. We started you on \na medication for this called amiodarone. You should decrease \nyour amiodarone as an outpatient slowly. On October 10, 2024, you should \ndecrease your amiodarone to 400mg once daily. On November 17, 2024, you \nshould decrease your amiodarone to 200mg once daily. Once you \nare at 200mg, you should continue taking that dose until you \nfollow up with Dr. Patel. Also,\nyou should wear your life vest at all times until you follow up \nwith Dr. Patel, as September 28, 2024 detect any abnormal heart rhythms \nand can provide life-saving shock treatment if necessary.\n\nYou should follow up as an outpatient to get lung function tests \ndone at Southside Regional Hospital (these are baseline tests that need to be done \nsince you are on amiodarone).\n \nFollowup Instructions:\nFollow up with Dr. Julianne Patel in 3 days to review lab results and discuss further management of your primary diagnosis. Please contact our office if you experience any worsening symptoms or have concerns between appointments.",
+        "pii_mappings": {
+          "Kieran Maddox": {
+            "type": "NAME"
+          },
+          "6705844": {
+            "type": "ID"
+          },
+          "2025-06-01": {
+            "type": "DATE"
+          },
+          "2025-06-07": {
+            "type": "DATE"
+          },
+          "1978-04-14": {
+            "type": "DATE"
+          },
+          "Julianne Patel": {
+            "type": "NAME"
+          },
+          "Maddox": {
+            "type": "NAME"
+          },
+          "Visiting Nurse Association": {
+            "type": "FACILITY"
+          },
+          "Southside Regional Hospital": {
+            "type": "HOSPITAL"
+          },
+          "Hays": {
+            "type": "NAME"
+          },
+          "Vick": {
+            "type": "NAME"
+          },
+          "May 26, 2025": {
+            "type": "DATE"
+          },
+          "October 10, 2025": {
+            "type": "DATE"
+          },
+          "Lisa Rodriguez": {
+            "type": "NAME"
+          },
+          "September 28, 2024": {
+            "type": "DATE"
+          }
+        },
+        "filled_values": [
+          "Kieran Maddox",
+          "6705844",
+          "2025-06-01",
+          "2025-06-07",
+          "1978-04-14",
+          "Julianne Patel",
+          "Maddox",
+          "Visiting Nurse Association",
+          "Southside Regional Hospital",
+          "Julianne Patel",
+          "Hays",
+          "Vick",
+          "May 26, 2025",
+          "October 10, 2025",
+          "Lisa Rodriguez",
+          "September 28, 2024"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 2,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kieran Maddox                   Unit No:   8459181\n \nAdmission Date:  2025-02-24              Discharge Date:   2025-03-08\n \nDate of Birth:  1984-07-08             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Cephalexin 500 mg PO Q8H \nRX *cephalexin 500 mg 1 capsule(s) by mouth Q8Hrs Disp #*18 \nCapsule Refills:*0 \n2.  Aspirin 81 mg PO DAILY  \n3.  Gabapentin 100 mg PO T",
+      "parsed": {
+        "filled_text": "Name:  Kieran Maddox                   Unit No:   8459181\n \nAdmission Date:  2025-02-24              Discharge Date:   2025-03-08\n \nDate of Birth:  1984-07-08             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Cephalexin 500 mg PO Q8H \nRX *cephalexin 500 mg 1 capsule(s) by mouth Q8Hrs Disp #*18 \nCapsule Refills:*0 \n2.  Aspirin 81 mg PO DAILY  \n3.  Gabapentin 100 mg PO TID  \n4.  Lisinopril 5 mg PO DAILY  \n5.  Multivitamins W/minerals 1 TAB PO DAILY  \n6.  Tamsulosin 0.4 mg PO QHS  \n7.Outpatient Occupational Therapy\nICD-10 Code: Smith.Thomas\nDiagnosis: R hand stiffness\nOccupational therapy for right hand/fingers Strength, ROM, RUE \nHEP. Also ADL's\n\n \nDischarge Disposition:\nHome With Service\n \nFacility:\nCarolina Home Healthcare Solutions\n \nDischarge Diagnosis:\nPrimary diagnosis:\nRight arm soft tissue injury\nRhabodmyolysis\nChronic kidney disease\n\nSecondary diagnosis:\nBenign prostate hyperplasia \nBack pain\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nDear Mr Hernandez,\n\nIt was a pleasure caring for you at Lincoln Community Hospital! \nMay 29, 2024!\n\nWHY WERE YOU ADMITTED?\nYou were admitted for swelling and pain in your right arm after \nusing a jackhammer.\n\nWHAT HAPPENED IN THE HOSPITAL?\nYou were seen by our colleagues from hand surgery who did not \nthink you had \"compartment syndrome\" - increased pressure within \nyour arm. Your arm was placed in a sling, kept elevated, and \ndressing was placed on. You were treated for your skin \nbreakdown. Also, you received a short course of antibiotics for \npossible skin infection which you need to continue after you \nleave the hospital. \n\nWHAT SHOULD YOU DO AT HOME?\nYou need to continue to hold your arm elevated at all possible \ntimes. \nYou need to continue with dressing changes daily with the help \nof a Johnson we will setup for you.\nYou need to follow up with hand surgery on February 17, 2025 and with \nyour PCP on November 18, 2024\nYou need to continue taking antibiotics until November 23, 2025.\nThe orthopedics team will contact you tomorrow November 22, 2024 to schedule \nthe appointment on October 26, 2024. If that does not happen please call \nMiller to schedule an appointment with Dr. Julianne Wellesley.\n\nThank you for allowing us be involved in your care, we wish you \nall the best!\n\nYour Lincoln Community Hospital Team\n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Wellesley in 4-6 weeks for a routine check-up to assess progress and adjust treatment as needed, or sooner if you experience any increase in pain or discomfort.",
+        "pii_mappings": {
+          "Kieran Maddox": {
+            "type": "NAME"
+          },
+          "8459181": {
+            "type": "ID"
+          },
+          "2025-02-24": {
+            "type": "DATE"
+          },
+          "2025-03-08": {
+            "type": "DATE"
+          },
+          "1984-07-08": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Lincoln Community Hospital": {
+            "type": "HOSPITAL"
+          },
+          "Carolina Home Healthcare Solutions": {
+            "type": "FACILITY"
+          },
+          "Smith": {
+            "type": "NAME"
+          },
+          "Thomas": {
+            "type": "NAME"
+          },
+          "Hernandez": {
+            "type": "NAME"
+          },
+          "May 29, 2024": {
+            "type": "DATE"
+          },
+          "February 17, 2025": {
+            "type": "DATE"
+          },
+          "November 18, 2024": {
+            "type": "DATE"
+          },
+          "November 23, 2025": {
+            "type": "DATE"
+          },
+          "November 22, 2024": {
+            "type": "DATE"
+          },
+          "October 26, 2024": {
+            "type": "DATE"
+          },
+          "Miller": {
+            "type": "NAME"
+          },
+          "Johnson": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Kieran Maddox",
+          "8459181",
+          "2025-02-24",
+          "2025-03-08",
+          "1984-07-08",
+          "Julianne Wellesley",
+          "Lincoln Community Hospital",
+          "Carolina Home Healthcare Solutions",
+          "Julianne Wellesley",
+          "Smith",
+          "Thomas",
+          "Hernandez",
+          "May 29, 2024",
+          "February 17, 2025",
+          "November 18, 2024",
+          "November 23, 2025",
+          "November 22, 2024",
+          "October 26, 2024",
+          "Miller",
+          "Johnson"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 3,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Aurora Wynter                 Unit No:   8475699\n \nAdmission Date:  2025-04-23              Discharge Date:   2025-05-04\n \nDate of Birth:  1965-10-18             Sex:   F\n \nService: MEDICINE\n \nAllergies: \noxycodone\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. Acetaminophen 650 mg PO Q4H:PRN pain \n2. Aspirin 81 mg PO DAILY \n3. Atorvastatin 20 mg PO QPM \n4. Lisinopril 20 mg PO DAILY \n5. Amlodipine 5 mg PO DAILY \n6. Ciprofloxacin HCl 500 mg PO Q12H \n7. Ipratropi",
+      "parsed": {
+        "filled_text": "Name:  Aurora Wynter                 Unit No:   8475699\n \nAdmission Date:  2025-04-23              Discharge Date:   2025-05-04\n \nDate of Birth:  1965-10-18             Sex:   F\n \nService: MEDICINE\n \nAllergies: \noxycodone\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. Acetaminophen 650 mg PO Q4H:PRN pain \n2. Aspirin 81 mg PO DAILY \n3. Atorvastatin 20 mg PO QPM \n4. Lisinopril 20 mg PO DAILY \n5. Amlodipine 5 mg PO DAILY \n6. Ciprofloxacin HCl 500 mg PO Q12H \n7. Ipratropium-Albuterol Neb 1 NEB NEB Q6H \n8. MetroNIDAZOLE 500 mg PO Q8H \n9. Albuterol Inhaler 2 PUFF IH Q6H \n10. Amitriptyline 25 mg PO QHS \n11. Ascorbic Acid Nelson mg PO DAILY \n12. Gabapentin 600 mg PO TID \n13. Meclizine 12.5 mg PO TID:PRN dizziness \n14. Vitamin E 1000 UNIT PO DAILY \n\n \nDischarge Disposition:\nExtended Care\n \nFacility:\nHome Health Services\n \nDischarge Diagnosis:\nColitis\n \nDischarge Condition:\nMental Status: Confused - sometimes.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Out of Bed with assistance to chair or \nwheelchair.\n \nDischarge Instructions:\nMs. Walker:\n\nIt was a pleasure caring for you at New Mexico Community Healthcare System.   You were admitted \nwith diarrhea and a low blood pressure.  CT scan showed \ninflammation in your intestines concerning for an infection.  \nYou were treated with fluids and antibiotics.  You improved and \nare now ready for discharge. You are being discharged to Marina \nBay, for additional physical therapy.\n \nFollowup Instructions:\nSchedule a follow-up appointment with Dr. Julianne Patel in 4-6 weeks to monitor your progress and adjust treatment as needed.",
+        "pii_mappings": {
+          "Aurora Wynter": {
+            "type": "NAME"
+          },
+          "8475699": {
+            "type": "ID"
+          },
+          "2025-04-23": {
+            "type": "DATE"
+          },
+          "2025-05-04": {
+            "type": "DATE"
+          },
+          "1965-10-18": {
+            "type": "DATE"
+          },
+          "Julianne Patel": {
+            "type": "NAME"
+          },
+          "Home Health Services": {
+            "type": "FACILITY"
+          },
+          "New Mexico Community Healthcare System": {
+            "type": "HOSPITAL"
+          },
+          "Marina Bay": {
+            "type": "FACILITY"
+          },
+          "Nelson": {
+            "type": "NAME"
+          },
+          "Walker": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Aurora Wynter",
+          "8475699",
+          "2025-04-23",
+          "2025-05-04",
+          "1965-10-18",
+          "Julianne Patel",
+          "Home Health Services",
+          "New Mexico Community Healthcare System",
+          "Julianne Patel",
+          "Marina Bay",
+          "Nelson",
+          "Walker"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 4,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Fothergill                Unit No:   2448795\n \nAdmission Date:  2025-03-17              Discharge Date:   2025-04-05\n \nDate of Birth:  1964-08-13             Sex:   F\n \nService: SURGERY\n \nAllergies: \nPenicillinase\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Acetaminophen 650 mg PO Q6H  \n2.  Cyclobenzaprine 10 mg PO TID:PRN pain \nRX *cyclobenzaprine 10 mg 1 tablet(s) by mouth three times a day \nDisp #*30 Tablet Refills:*0 \n3.  Docusate Sodium 100 ",
+      "parsed": {
+        "filled_text": "Name:  Astrid Fothergill                Unit No:   2448795\n \nAdmission Date:  2025-03-17              Discharge Date:   2025-04-05\n \nDate of Birth:  1964-08-13             Sex:   F\n \nService: SURGERY\n \nAllergies: \nPenicillinase\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Acetaminophen 650 mg PO Q6H  \n2.  Cyclobenzaprine 10 mg PO TID:PRN pain \nRX *cyclobenzaprine 10 mg 1 tablet(s) by mouth three times a day \nDisp #*30 Tablet Refills:*0 \n3.  Docusate Sodium 100 mg PO BID \nRX *docusate sodium 100 mg 1 capsule(s) by mouth twice a day \nDisp #*20 Capsule Refills:*0 \n4.  OxyCODONE (Immediate Release) 5 mg PO Q6H:PRN Pain - \nModerate \nRX *oxycodone 5 mg 1 tablet(s) by mouth every six (6) hours Disp \n#*10 Tablet Refills:*0 \n5.  Lisinopril 20 mg PO DAILY  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\ns/p ventral hernia repair\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nIt was a pleasure taking care of you here at the Parkside Community Healthcare System. \nSnyder. You were admitted to our hospital for \nyour abdominal pain. You had a ventral hernia repair on October 27, 2024. \nYou tolerated the procedure well and have recovered well from \nsome mild \npost-operative issues, that resolved prior to your discharge. \nYou are now ambulating, stooling, tolerating a regular diet, and \n\nyour pain is controlled by pain medications by mouth. You are \nnow ready to be discharged to home. Please follow the \nrecommendations below to ensure a speedy and uneventful \nrecovery. \n\nACTIVITY:\n- Do not drive until you have stopped taking pain medicine and \nfeel you could respond in an emergency.\n- You may climb stairs. You should continue to walk several \ntimes a day. \n- You may go outside, but avoid traveling long distances until \nyou see your surgeon at your next visit. \n- You may start some light exercise when you feel comfortable. \nSlowly increase your activity back to your baseline as \ntolerated.\n- Heavy exercise may be started after 6 weeks, but use common \nsense and go slowly at first. \n- No heavy lifting (10 pounds or more) until cleared by your \nsurgeon, usually about 6 weeks. \n- You may resume sexual activity unless your doctor has told you \n\notherwise.\n\nHOW YOU MAY FEEL: \n- You may feel weak or \"washed out\" for 6 weeks. You might want \nto nap often. Simple tasks may exhaust you.\n- You may have a sore throat because of a tube that was in your \nthroat during the surgery.\n\nYOUR BOWELS:\n- If needed, you may take a stool softener(such as Colace, one \ncapsule) or gentle laxative (such as milk of magnesia, 1 tbs) \ntwice a day. You can get both of these medicines without a \nprescription.\n- If you go 48 hours without a bowel movement, or have pain \nmoving the bowels, call your surgeon.\n- After some operations, diarrhea can occur. If you get \ndiarrhea, don't take anti-diarrhea medicines. Drink plenty of \nfluids and see if it goes away. If it does not go away, or is \nsevere and you feel ill, please call your surgeon.\n\nPAIN MANAGEMENT:\n- You are being discharged with a prescription for \nCyclobenzaprine\nfor pain control. You may take Tylenol as directed, not to \nexceed 3500mg in 24 hours. Take regularly for a few days after \nsurgery but you may skip a dose or increase time between doses \nif you are not having pain until you no longer need it. You may \ntake the oxycodone for moderate and severe pain not controlled \nby the Tylenol. You may take a stool softener while on narcotics \n\nto help prevent the constipation that they may cause. Slowly \nwean off these medications as tolerated. \n- Your pain should get better day by day. If you find the pain \nis getting worse instead of better, please contact your surgeon.\n\nIf you experience any of the following, please contact your \nsurgeon: \n- sharp pain or any severe pain that lasts several hours\n- chest pain, pressure, squeezing, or tightness\n- cough, shortness of breath, wheezing\n- pain that is getting worse over time or pain with fever\n- shaking chills, fever of more than 101\n- a drastic change in nature or quality of your pain\n- nausea and vomiting, inability to tolerate fluids, food, or \nyour medications\n- if you are getting dehydrated (dry mouth, rapid heart beat, \nfeeling dizzy or faint especially while standing)\n-any change in your symptoms or any symptoms that concern you\n\nAdditional: \n- You are being discharged with a JP drain. Please empty when \nhalfway full and record daily output.\n\nMEDICATIONS:\n- Take all the medicines you were on before the operation just \nas you did before, unless you have been told differently.\n- If you have any questions about what medicine to take or not \nto take, please call your surgeon. \n- You are going home on metoprolol 12.5mg every 12 hours. Please \n\ncontinue until follow up in clinic. (1 week following \ndischarge). \n\nWOUND CARE: \n-You may shower with any bandage strips that may be covering \nyour wound. Do not scrub and do not soak or swim, and pat the \nincision dry. If you have steri strips, they will fall off by \nthemselves in Martin. If any are still on in two weeks and \nthe edges are curling up, you may carefully peel them off.  *** \nYour staples will be removed by your surgeon at your follow up \nappointment. \n Do not take baths, soak, or swim for 6 weeks after surgery \nunless told otherwise by your surgical team. \n-Notify your surgeon is you notice abnormal (foul smelling, \nbloody, pus, etc) or increased drainage from your incision site, \n\nopening of your incision, or increased pain or bruising. Watch \nfor signs of infection such as redness, streaking of your skin, \nswelling, increased pain, or increased drainage. \n\nPlease call with any questions or concerns. Thank you for \nallowing us to participate in your care. We hope you have a \nquick return to your usual life and activities. \n\n-- Your Washington Care Team\n \nFollowup Instructions:\nFollow up with Dr. Julianne Wellesley in 2 weeks to assess progress and adjust treatment plan as necessary. Please schedule this appointment by calling our office at least 24 hours prior to ensure availability.",
+        "pii_mappings": {
+          "Astrid Fothergill": {
+            "type": "NAME"
+          },
+          "2448795": {
+            "type": "ID"
+          },
+          "2025-03-17": {
+            "type": "DATE"
+          },
+          "2025-04-05": {
+            "type": "DATE"
+          },
+          "1964-08-13": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Washington": {
+            "type": "NAME"
+          },
+          "Parkside Community Healthcare System": {
+            "type": "HOSPITAL"
+          },
+          "Snyder": {
+            "type": "NAME"
+          },
+          "October 27, 2024": {
+            "type": "DATE"
+          },
+          "Martin": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Astrid Fothergill",
+          "2448795",
+          "2025-03-17",
+          "2025-04-05",
+          "1964-08-13",
+          "Julianne Wellesley",
+          "Washington",
+          "Parkside Community Healthcare System",
+          "Julianne Wellesley",
+          "Snyder",
+          "October 27, 2024",
+          "Martin"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 5,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Fothergill                  Unit No:   9131608\n \nAdmission Date:  2025-12-23              Discharge Date:   2026-01-08\n \nDate of Birth:  1976-12-17             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1.  Acetaminophen 325-650 mg PO Q6H:PRN Pain - Mild \nRX *acetaminophen 325 mg 2 tablet(s) by mouth every 6 hours Disp \n#*60 Tablet Refills:*0 \n2.  Rivaroxaban 15 mg ",
+      "parsed": {
+        "filled_text": "Name:  Astrid Fothergill                  Unit No:   9131608\n \nAdmission Date:  2025-12-23              Discharge Date:   2026-01-08\n \nDate of Birth:  1976-12-17             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1.  Acetaminophen 325-650 mg PO Q6H:PRN Pain - Mild \nRX *acetaminophen 325 mg 2 tablet(s) by mouth every 6 hours Disp \n#*60 Tablet Refills:*0 \n2.  Rivaroxaban 15 mg PO BID Duration: 21 Days \nDose #1 of 2: Please take 15mg twice daily for 3 weeks, then \nswitch to Dose #2 of 2  \nRX *rivaroxaban [Guzman] 15 mg 1 tablet(s) by mouth twice daily \nDisp #*42 Tablet Refills:*0 \n3.  Rivaroxaban 20 mg PO DAILY \nDose #2 of 2: Please start 20mg daily after Lopez complete 3 weeks \nof 15mg twice daily \nRX *rivaroxaban [Perez] 20 mg 1 tablet(s) by mouth daily Disp \n#*30 Tablet Refills:*0 \n4.  ALPRAZolam 0.25 mg PO QHS:PRN anxiety, insomnia  \n5.  Famotidine 20 mg PO DAILY  \n6.  Levothyroxine Sodium 125 mcg PO DAILY  \n7.  Simvastatin 10 mg PO QPM  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nPulmonary Embolism (segmental and subsegmental PE)\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nDear Wilson,\n\nJune 25, 2025 presented to the Thomas Martinez ED with right flank and right upper \nabdominal pain, accompanied with right-sided posterior chest \nwall pain that worsened with inspiration. Stewart were assessed with \nlabs and imaging, and a CT scan of your chest showed several \npulmonary emboli as well as an associated pulmonary infarction \n(a damaged area of the lung due to lack of blood flow). \n\nDue to the above finding of a pulmonary embolism and pulmonary \ninfarction, Rodriguez were admitted to the inpatient service, where \nEvans were assessed with labs and monitored on telemetry. Wright had \nno difficulty maintaining your oxygen saturation, and your pain \nwas well controlled while admitted to the inpatient service. Wright \nwere transitioned from Lovenox to Rivaroxaban, a medication to \nprevent further development of blood clots in your lungs or \nelsewhere in your body. Wright will readdress how long Harris need to \nbe on your Rivaroxaban with your outpatient primary care \nphysician and outpatient hematologist, however Wright will likely \ncontinue Rivaroxaban for a minimum of 6 months. \n\nPlease also followup at the appointments noted below that have \nbeen arranged on your behalf.\n\nIt was a pleasure being involved in your care. \nYour Brown care team\n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Marquez in 3 days to monitor your progress and adjust treatment as needed, and please contact her office if you experience any worsening of symptoms or have concerns between appointments.",
+        "pii_mappings": {
+          "Astrid Fothergill": {
+            "type": "NAME"
+          },
+          "9131608": {
+            "type": "ID"
+          },
+          "2025-12-23": {
+            "type": "DATE"
+          },
+          "2026-01-08": {
+            "type": "DATE"
+          },
+          "1976-12-17": {
+            "type": "DATE"
+          },
+          "Julianne Marquez": {
+            "type": "NAME"
+          },
+          "Guzman": {
+            "type": "NAME"
+          },
+          "Lopez": {
+            "type": "NAME"
+          },
+          "Perez": {
+            "type": "NAME"
+          },
+          "Wilson": {
+            "type": "NAME"
+          },
+          "June 25, 2025": {
+            "type": "DATE"
+          },
+          "Thomas Martinez": {
+            "type": "NAME"
+          },
+          "Stewart": {
+            "type": "NAME"
+          },
+          "Rodriguez": {
+            "type": "NAME"
+          },
+          "Evans": {
+            "type": "NAME"
+          },
+          "Wright": {
+            "type": "NAME"
+          },
+          "Harris": {
+            "type": "NAME"
+          },
+          "Brown": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Astrid Fothergill",
+          "9131608",
+          "2025-12-23",
+          "2026-01-08",
+          "1976-12-17",
+          "Julianne Marquez",
+          "Julianne Marquez",
+          "Guzman",
+          "Lopez",
+          "Perez",
+          "Wilson",
+          "June 25, 2025",
+          "Thomas Martinez",
+          "Stewart",
+          "Rodriguez",
+          "Evans",
+          "Wright",
+          "Harris",
+          "Brown"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 6,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Fothergill                    Unit No:   7024242\n \nAdmission Date:  2025-08-21              Discharge Date:   2025-09-04\n \nDate of Birth:  1965-11-26             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nPhenergan\n \nAttending: Dr. Julianne Sawyer\n\nDischarge Medications:\n1. Morphine 100 mg Tablet Sustained Release Sig: One (1) Tablet \nSustained Release PO Q8H (every 8 hours).  \n2. Topiramate 100 mg Tablet Sig: Two (2) Tablet PO BID (2 times \na day).  \n3. Gemfibrozil",
+      "parsed": {
+        "filled_text": "Name:  Astrid Fothergill                    Unit No:   7024242\n \nAdmission Date:  2025-08-21              Discharge Date:   2025-09-04\n \nDate of Birth:  1965-11-26             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nPhenergan\n \nAttending: Dr. Julianne Sawyer\n\nDischarge Medications:\n1. Morphine 100 mg Tablet Sustained Release Sig: One (1) Tablet \nSustained Release PO Q8H (every 8 hours).  \n2. Topiramate 100 mg Tablet Sig: Two (2) Tablet PO BID (2 times \na day).  \n3. Gemfibrozil 600 mg Tablet Sig: One (1) Tablet PO BID (2 times \na day).  \n4. Albuterol Sulfate 2.5 mg /3 mL (0.083 %) Solution for \nNebulization Sig: One (1)  Inhalation Q6H (every 6 hours) as \nneeded for shortness of breath.  \n5. Ipratropium Bromide 0.02 % Solution Sig: One (1)  Inhalation \nQ6H (every 6 hours) as needed for shortness of breath.  \n6. Lamotrigine 100 mg Tablet Sig: Four (4) Tablet PO BID (2 \ntimes a day).  \n7. Oxycodone-Acetaminophen Johnson mg Tablet Sig: One (1) Tablet \nPO Q6H (every 6 hours) as needed for pain.  \n8. Insulin Glargine 100 unit/mL Solution Sig: One (1)  \nSubcutaneous DINNER (Dinner).  \n9. Hydromorphone 4 mg Tablet Sig: One (1) Tablet PO Q4H (every 4 \nhours) as needed for pain.\nDisp:*40 Tablet(s)* Refills:*0*\n10. Protonix 40 mg Tablet, Delayed Release (E.C.) Sig: One (1) \nTablet, Delayed Release (E.c.) PO once a day.  \n11. Reglan 10 mg Tablet Sig: One (1) Tablet PO four times a day \nas needed for nausea.  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nChronic pancreatitis\n \nDischarge Condition:\nExcellent\n \nDischarge Instructions:\nYou had a chronic pancreatitis pain flare. You improved with \nconservative management alone. Please follow up with your GI \ndoctor. we reduced your insulin dose to 10 untis from 80 units. \nHowever, you need to increase it gradually based on your intake \nof carbohydrates and you blood glucse level checke 3 time a day. \n  \n \nFollowup Instructions:\nFollow up with Dr. Julianne Sawyer in 2 weeks to review lab results and discuss further management of your chronic pancreatitis. During this appointment, Dr. Julianne Sawyer will also assess the effectiveness of current treatments and make any necessary adjustments to your care plan.",
+        "pii_mappings": {
+          "Astrid Fothergill": {
+            "type": "NAME"
+          },
+          "7024242": {
+            "type": "ID"
+          },
+          "2025-08-21": {
+            "type": "DATE"
+          },
+          "2025-09-04": {
+            "type": "DATE"
+          },
+          "1965-11-26": {
+            "type": "DATE"
+          },
+          "Julianne Sawyer": {
+            "type": "NAME"
+          },
+          "Johnson": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Astrid Fothergill",
+          "7024242",
+          "2025-08-21",
+          "2025-09-04",
+          "1965-11-26",
+          "Julianne Sawyer",
+          "Julianne Sawyer",
+          "Johnson"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 7,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Rutledge                  Unit No:   9248765\n \nAdmission Date:  2024-08-14              Discharge Date:   2024-09-01\n \nDate of Birth:  1993-12-16             Sex:   F\n \nService: NEUROSURGERY\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1.  Acetaminophen Smith mg PO Q6H:PRN Pain - Mild  \n2.  Aspirin 325 mg PO DAILY  \n3.  Bisacodyl 10 mg PO/PR DAILY:PRN Constipation  \n4.  Docusate Sodium 100 mg PO ",
+      "parsed": {
+        "filled_text": "Name:  Astrid Rutledge                  Unit No:   9248765\n \nAdmission Date:  2024-08-14              Discharge Date:   2024-09-01\n \nDate of Birth:  1993-12-16             Sex:   F\n \nService: NEUROSURGERY\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1.  Acetaminophen Smith mg PO Q6H:PRN Pain - Mild  \n2.  Aspirin 325 mg PO DAILY  \n3.  Bisacodyl 10 mg PO/PR DAILY:PRN Constipation  \n4.  Docusate Sodium 100 mg PO BID  \n5.  NiMODipine 60 mg PO Q4H \nEnd Davis \nRX *nimodipine 30 mg 2 capsule(s) by mouth every 4 hours Disp \n#*174 Capsule Refills:*0 \n6.  OxyCODONE (Immediate Release) 5 mg PO Q6H:PRN Pain - \nModerate \nRX *oxycodone 5 mg 1 tablet(s) by mouth every 6 hours as needed \nDisp #*30 Tablet Refills:*0 \n7.  Senna 8.6 mg PO BID:PRN Constipation  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nSubarachnoid Hemorrhage\nRight Posterior Communicating artery aneurysm\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nDischarge Instructions\n\nAneurysmal Subarachnoid Hemorrhage \n\nSurgery/ Procedures:\nYou had a cerebral angiogram to embolize the aneurysm. You may \nexperience some mild tenderness and bruising at the puncture \nsite (groin).\n \n\nActivity\nWe recommend that you avoid heavy lifting, running, climbing, \nor other strenuous exercise until your follow-up appointment.\nYou make take leisurely walks and slowly increase your \nactivity at your own pace. Thomas try to do too much all at once.\nYou make take a shower. \nNo driving while taking any narcotic or sedating medication. \nIf you experienced a seizure while admitted, you must refrain \nfrom driving. \n\nMedications\nResume your normal medications and begin new medications as \ndirected.\nYou have been instructed by your doctor to take one White a \nday. If so, do not take any other products that have Aspirin in \nthem. If you are unsure of what products contain Aspirin, as \nyour pharmacist or call our office. \nPlease do NOT take any other blood thinning medication \n(Plavix, Coumadin) until cleared by the neurosurgeon. \nYou have been discharged on a medication called Nimodipine. \nThis medication is used to help prevent cerebral vasospasm \n(narrowing of blood vessels in the brain). \nYou may use Acetaminophen (Tylenol) for minor discomfort if \nyou are not otherwise restricted from taking this medication.\n\nWhat You Mitchell Experience:\nMild to moderate headaches that last several days to a few \nweeks.\nDifficulty with short term memory. \nFatigue is very normal\nConstipation is common. Be sure to drink plenty of fluids and \neat a high-fiber diet. If you are taking narcotics (prescription \npain medications), try an over-the-counter stool softener.\n\nWhen to Call Your Doctor at Linda Tran for:\nSevere pain, swelling, redness or drainage from the incision \nsite or puncture site. \nFever greater than 101.5 degrees Fahrenheit\nConstipation\nBlood in your stool or urine\nNausea and/or vomiting\nExtreme sleepiness and not being able to stay awake\nSevere headaches not relieved by pain relievers\nSeizures\nAny new problems with your vision or ability to speak\nWeakness or changes in sensation in your face, arms, or leg\n\nCall Brown and go to the nearest Emergency Room if you experience \nany of the following:\nSudden numbness or weakness in the face, arm, or leg\nSudden confusion or trouble speaking or understanding\nSudden trouble walking, dizziness, or loss of balance or \ncoordination\nSudden severe headaches with no known reason\n\n \nFollowup Instructions:\nSchedule a follow-up appointment with Dr. Julianne Marquez in 1-2 weeks to monitor your recovery from the subarachnoid hemorrhage and assess the stability of the aneurysm repair.",
+        "pii_mappings": {
+          "Astrid Rutledge": {
+            "type": "NAME"
+          },
+          "9248765": {
+            "type": "ID"
+          },
+          "2024-08-14": {
+            "type": "DATE"
+          },
+          "2024-09-01": {
+            "type": "DATE"
+          },
+          "1993-12-16": {
+            "type": "DATE"
+          },
+          "Julianne Marquez": {
+            "type": "NAME"
+          },
+          "Smith": {
+            "type": "NAME"
+          },
+          "Davis": {
+            "type": "NAME"
+          },
+          "Thomas": {
+            "type": "NAME"
+          },
+          "White": {
+            "type": "NAME"
+          },
+          "Mitchell": {
+            "type": "NAME"
+          },
+          "Linda Tran": {
+            "type": "NAME"
+          },
+          "Brown": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Astrid Rutledge",
+          "9248765",
+          "2024-08-14",
+          "2024-09-01",
+          "1993-12-16",
+          "Julianne Marquez",
+          "Julianne Marquez",
+          "Smith",
+          "Davis",
+          "Thomas",
+          "White",
+          "Mitchell",
+          "Linda Tran",
+          "Brown"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 8,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Aubrey Fothergill                  Unit No:   6488846\n \nAdmission Date:  2025-01-06              Discharge Date:   2025-01-12\n \nDate of Birth:  1958-03-28             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nPenicillins / Topamax / Reglan\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. Baclofen 10 mg PO QID \n2. BusPIRone 15 mg PO BID \n3. Duloxetine 120 mg PO DAILY Fibromyalgia \n4. Gabapentin 800 mg PO QID Smith \n5. Levothyroxine Sodium 137 mcg PO DAILY \n6. Lor",
+      "parsed": {
+        "filled_text": "Name:  Aubrey Fothergill                  Unit No:   6488846\n \nAdmission Date:  2025-01-06              Discharge Date:   2025-01-12\n \nDate of Birth:  1958-03-28             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nPenicillins / Topamax / Reglan\n \nAttending: Dr. Julianne Patel\n\nDischarge Medications:\n1. Baclofen 10 mg PO QID \n2. BusPIRone 15 mg PO BID \n3. Duloxetine 120 mg PO DAILY Fibromyalgia \n4. Gabapentin 800 mg PO QID Smith \n5. Levothyroxine Sodium 137 mcg PO DAILY \n6. Lorazepam 0.5 mg PO BID \n7. OxyCODONE SR (OxyconTIN) 30 mg PO Q12H \n8. Polyethylene Glycol 17 g PO BID \n9. Ranitidine 300 mg PO DAILY \n10. Sumatriptan Succinate 100 mg PO DAILY:PRN migraine \n11. Sumatriptan Succinate 6 mg SC DAILY:PRN migraine \n12. TraZODone 100 mg PO DAILY \n13. Celecoxib 200 mg ORAL DAILY \n14. Elmiron (pentosan polysulfate sodium) 100 mg oral TID \n15. lurasidone 20 mg oral daily \n16. NexIUM (esomeprazole magnesium) 40 mg oral BID \n17. Vitamin D 50,000 UNIT PO 1X/WEEK (MO) \n18. Phenazopyridine 100 mg PO TID Duration: 3 Days \n19. Oxycodone-Acetaminophen (5mg-325mg) 1 TAB PO Q8H:PRN Davis \n\n \nDischarge Disposition:\nExtended Care\n \nDischarge Diagnosis:\nPRIMARY:\n-Pelvic Thompson\n-Chest Garcia\n-Suicideal ideation\n\nSECONDARY:\n-Fibromyalgia\n-Interstitial cystitis\n-Endometriosis\n-Bipolar disorder\n-Depression\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent. Requires assistance \ndue to Johnson.\n \nDischarge Instructions:\nDear Davis,\n\nMay 26, 2025 were admitted to Thomas \npresented to the hospital with significant pelvic Smith and \nsuicidal ideation. Ramirez were evaluated by Psychiatry, Gynecology, \nand the Chronic Rodriguez Service. We continued all of your home Clark \nmedications. We were not able to find the etiology of your Walker. \nWe contacted your outpatient providers including your Moore \ndoctor Dr. Jones. Your Garcia regimen was adjusted. At your \nrequest, Thompson are being transferred to Smith Hospital \nfor further management.\n \nFollowup Instructions:\nFollow up with Dr. Julianne Patel in 2 weeks to review test results and assess the effectiveness of current treatment plan, or sooner if symptoms worsen or new concerns arise.",
+        "pii_mappings": {
+          "Aubrey Fothergill": {
+            "type": "NAME"
+          },
+          "6488846": {
+            "type": "ID"
+          },
+          "2025-01-06": {
+            "type": "DATE"
+          },
+          "2025-01-12": {
+            "type": "DATE"
+          },
+          "1958-03-28": {
+            "type": "DATE"
+          },
+          "Julianne Patel": {
+            "type": "NAME"
+          },
+          "Davis": {
+            "type": "NAME"
+          },
+          "Smith": {
+            "type": "NAME"
+          },
+          "Garcia": {
+            "type": "NAME"
+          },
+          "Thompson": {
+            "type": "NAME"
+          },
+          "Moore": {
+            "type": "NAME"
+          },
+          "Jones": {
+            "type": "NAME"
+          },
+          "Ramirez": {
+            "type": "NAME"
+          },
+          "Rodriguez": {
+            "type": "NAME"
+          },
+          "Thomas": {
+            "type": "NAME"
+          },
+          "Walker": {
+            "type": "NAME"
+          },
+          "Johnson": {
+            "type": "NAME"
+          },
+          "May 26, 2025": {
+            "type": "DATE"
+          }
+        },
+        "filled_values": [
+          "Aubrey Fothergill",
+          "6488846",
+          "2025-01-06",
+          "2025-01-12",
+          "1958-03-28",
+          "Julianne Patel",
+          "Davis",
+          "Smith",
+          "Garcia",
+          "Thompson",
+          "Moore",
+          "Jones",
+          "Ramirez",
+          "Rodriguez",
+          "Davis",
+          "Thomas",
+          "Walker",
+          "Johnson",
+          "May 26, 2025",
+          "Garcia"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 9,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Fothergill                Unit No:   9345544\n \nAdmission Date:  2025-10-18              Discharge Date:   2025-10-20\n \nDate of Birth:  1975-03-27             Sex:   F\n \nService: SURGERY\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Enoxaparin Sodium 60 mg SC Q12H \nStart: Today - Johnson, First Dose: Next Routine Administration \nTime \nRX *enoxaparin 60 mg/0.6 mL 1 syringe SC twice per day Dis",
+      "parsed": {
+        "filled_text": null,
+        "pii_mappings": null,
+        "filled_values": null
+      },
+      "checks": {
+        "format": {
+          "pass": false,
+          "errors": [
+            "missing_filled_record",
+            "missing_pii_mappings",
+            "missing_filled_values"
+          ]
+        },
+        "placeholder_residual": {
+          "pass": false,
+          "remaining_count": -1
+        },
+        "date_logic": {
+          "pass": false,
+          "errors": [
+            "no_filled_text"
+          ]
+        },
+        "name_consistency": {
+          "pass": false,
+          "errors": [
+            "no_filled_text"
+          ]
+        },
+        "mapping_consistency": {
+          "pass": false,
+          "errors": [
+            "cannot_check_mapping_consistency"
+          ]
+        }
+      }
+    },
+    {
+      "index": 10,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kaius Ryder                  Unit No:   6248554\n \nAdmission Date:  2025-01-20              Discharge Date:   2025-02-10\n \nDate of Birth:  1986-07-20             Sex:   M\n \nService: NEUROSURGERY\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1. Acetaminophen 325-650 mg PO Q6H:PRN fever/pain \n2. Amoxicillin-Clavulanic Acid Anderson mg PO Q12H Duration: 7 Days \nRX *amoxicillin-pot clavulanate 875 mg-125 mg 1",
+      "parsed": {
+        "filled_text": "Name:  Kaius Ryder                  Unit No:   6248554\n \nAdmission Date:  2025-01-20              Discharge Date:   2025-02-10\n \nDate of Birth:  1986-07-20             Sex:   M\n \nService: NEUROSURGERY\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1. Acetaminophen 325-650 mg PO Q6H:PRN fever/pain \n2. Amoxicillin-Clavulanic Acid Anderson mg PO Q12H Duration: 7 Days \nRX *amoxicillin-pot clavulanate 875 mg-125 mg 1 tablet(s) by \nmouth twice a day Disp #*12 Tablet Refills:*0\n3. Docusate Sodium 100 mg PO BID \n4. OxyCODONE (Immediate Release) Hall mg PO Q4H:PRN Pain - \nModerate \nRX *oxycodone 5 mg 1 tablet(s) by mouth Every 4 hours Disp #*20 \nTablet Refills:*0\n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\n- Complex depressed Bifrontal sinus fractures involving both the \nanterior and posterior tables\n- Left Orbital roof fracture\n- Retinal Commotio\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nActivity\nSINUS PRECAUTIONS:\n- No straws\n- Do not blow your nose\n- Sneeze with open mouth\n- Avoid smoking cigarettes, pipes or cigars\n- Avoid swimming and strenuous exercise for one week. \n\n- Ice to left eyelid x 48 hours \n- Seek Emergency eye evaluation for any change in vision sudden \nonset of shower of new floaters, persistent flashes of light or \ncurtain over vision\nWe recommend that you avoid heavy lifting, running, climbing, \nor other strenuous exercise until your follow-up appointment.\nNo driving while taking any narcotic or sedating medication. \nYou should avoid contact sports for 6 months. \n\nMedications\nYou may use Acetaminophen (Tylenol) for minor discomfort if \nyou are not otherwise restricted from taking this medication.\n\nWhat You Walker Experience with Traumatic Brain Injury:\nYou may have difficulty paying attention, concentrating, and \nremembering new information.\nEmotional and/or behavioral difficulties are common. \nFeeling more tired, restlessness, irritability, and mood \nswings are also common.\nConstipation is common. Be sure to drink plenty of fluids and \neat a high-fiber diet. If you are taking narcotics (prescription \npain medications), try an over-the-counter stool softener.\nHeadaches:\nHeadache is one of the most common symptoms after traumatic \nbrain injury. Headaches can be long-lasting. \nMost headaches are not dangerous but you should call your \ndoctor if the headache gets worse, develop arm or leg weakness, \nincreased sleepiness, and/or have nausea or vomiting with a \nheadache. \nMild pain medications may be helpful with these headaches but \navoid taking pain medications on a daily basis unless prescribed \nby your doctor. \nThere are other things that can be done to help with your \nheadaches: avoid caffeine, get enough sleep, daily exercise, \nrelaxation/ meditation, massage, acupuncture, heat or ice packs. \n\n\nMore Information about Brain Injuries:\nYou were given information about headaches after TBI and the \nimpact that TBI can have on your family.\nIf you would like to read more about other topics such as: \nsleeping, driving, cognitive problems, emotional problems, \nfatigue, seizures, return to school, depression, balance, or/and \nsexuality after TBI, please ask our staff for this information \nor visit Smith\n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Marquez in 4-6 weeks to assess the healing progress of the complex depressed Bifrontal sinus fractures and determine if further treatment is needed. During this visit, be prepared to discuss any changes in symptoms or discomfort.",
+        "pii_mappings": {
+          "Kaius Ryder": {
+            "type": "NAME"
+          },
+          "6248554": {
+            "type": "ID"
+          },
+          "2025-01-20": {
+            "type": "DATE"
+          },
+          "2025-02-10": {
+            "type": "DATE"
+          },
+          "1986-07-20": {
+            "type": "DATE"
+          },
+          "Julianne Marquez": {
+            "type": "NAME"
+          },
+          "Anderson": {
+            "type": "NAME"
+          },
+          "Hall": {
+            "type": "NAME"
+          },
+          "Walker": {
+            "type": "NAME"
+          },
+          "Smith": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Kaius Ryder",
+          "6248554",
+          "2025-01-20",
+          "2025-02-10",
+          "1986-07-20",
+          "Julianne Marquez",
+          "Julianne Marquez",
+          "Anderson",
+          "Hall",
+          "Walker",
+          "Smith"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 11,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Aurora Wynter                    Unit No:   8359218\n \nAdmission Date:  2025-07-27              Discharge Date:   2025-08-20\n \nDate of Birth:  1986-06-28             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Kessler\n\nDischarge Medications:\n1. Acetaminophen 1000 mg PO Q8H \n2. Amlodipine 10 mg PO DAILY \n3. Docusate Sodium 100 mg PO BID \n4. Lorazepam 0.5 mg PO TID anxiety \n5. Senna 1 TAB PO BID:PRN constipa",
+      "parsed": {
+        "filled_text": "Name:  Aurora Wynter                    Unit No:   8359218\n \nAdmission Date:  2025-07-27              Discharge Date:   2025-08-20\n \nDate of Birth:  1986-06-28             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Kessler\n\nDischarge Medications:\n1. Acetaminophen 1000 mg PO Q8H \n2. Amlodipine 10 mg PO DAILY \n3. Docusate Sodium 100 mg PO BID \n4. Lorazepam 0.5 mg PO TID anxiety \n5. Senna 1 TAB PO BID:PRN constipation \n6. Hydrochlorothiazide 25 mg PO DAILY \n7. Valsartan 160 mg PO BID \n8. Zolpidem Tartrate 5 mg PO HS \n9. Metoprolol Succinate XL 100 mg PO DAILY \n10. OxycoDONE (Immediate Release)  Mckenzie mg PO Q4H:PRN pain \nRX *oxycodone 5 mg Howard tablet(s) by mouth every 4 hours Disp \n#*120 Tablet Refills:*0\n11. Polyethylene Glycol 17 g PO DAILY \nRX *polyethylene glycol 3350 17 gram 1 packet by mouth daily \nDisp #*30 Packet Refills:*0\n12. Enoxaparin Sodium 30 mg SC Q24H Duration: 30 Days \nRX *enoxaparin 30 mg/0.3 mL Inject into subcutaneous fat over \nbelly daily Disp #*30 Syringe Refills:*0\n13. Calcium Carbonate 500 mg PO TID \nRX *calcium carbonate [Calcium 500] 500 mg calcium (1,250 mg) 1 \ntablet(s) by mouth twice a day Disp #*60 Tablet Refills:*0\n14. Vitamin D 800 UNIT PO DAILY \nRX *ergocalciferol (vitamin D2) 400 unit 2 tablet(s) by mouth \ndaily Disp #*60 Tablet Refills:*0\n\n \nDischarge Disposition:\nExtended Care\n \nFacility:\nCommunity Health Services\n \nDischarge Diagnosis:\nLeft intertronchanteric femoral fracture\nSurgical repair: Left hip open reduction internal fixation\n\n \nDischarge Condition:\nMental Status: Clear and coherent. Limited only by hearing.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Out of Bed with assistance to chair or \nwheelchair. Weight bearing as tolerated\n\n \nDischarge Instructions:\nDear Ms. Wynter,\n\nIt was a pleasure taking care of you while you were admitted to \nOctober 22, 2024.  You were admitted after falling and fracturing your left \nhip.  You had surgery to repair this hip with pins and you \ntolerated this well. There were no complications of surgery.  \n\nFor the next month, you will continue on a blood thinner called \nLovenox to prevent blood clots.  You will inject this medication \nat the same time each day until October 21, 2024.\n\nYou will be transfered to a rehab facility where you will have \nintensive rehabilitation to restore your physical mobility.  We \nanticipate your length of stay at rehab to be less than 30 days. \n \n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Kessler in 4-6 weeks to assess the healing progress of your left intertronchanteric femoral fracture and adjust treatment as needed. Please contact our office to schedule this appointment.",
+        "pii_mappings": {
+          "Aurora Wynter": {
+            "type": "NAME"
+          },
+          "8359218": {
+            "type": "ID"
+          },
+          "2025-07-27": {
+            "type": "DATE"
+          },
+          "2025-08-20": {
+            "type": "DATE"
+          },
+          "1986-06-28": {
+            "type": "DATE"
+          },
+          "Julianne Kessler": {
+            "type": "NAME"
+          },
+          "Wynter": {
+            "type": "NAME"
+          },
+          "Community Health Services": {
+            "type": "FACILITY"
+          },
+          "Mckenzie": {
+            "type": "NAME"
+          },
+          "Howard": {
+            "type": "NAME"
+          },
+          "October 22, 2024": {
+            "type": "DATE"
+          },
+          "October 21, 2024": {
+            "type": "DATE"
+          }
+        },
+        "filled_values": [
+          "Aurora Wynter",
+          "8359218",
+          "2025-07-27",
+          "2025-08-20",
+          "1986-06-28",
+          "Julianne Kessler",
+          "Wynter",
+          "Community Health Services",
+          "Julianne Kessler",
+          "Mckenzie",
+          "Howard",
+          "October 22, 2024",
+          "October 21, 2024"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 12,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kieran Maddox                 Unit No:   9033912\n \nAdmission Date:  2025-09-01              Discharge Date:   2025-09-10\n \nDate of Birth:  1996-06-11             Sex:   M\n \nService: SURGERY\n \nAllergies: \nPatient recorded as having No Known Allergies to Drugs\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1. Roxicet Phillips mg/5 mL Solution Sig: Turner ml PO every four (4) \nhours as needed for pain.\nDisp:*500 ml* Refills:*0*\n2. Colace 60 mg/15 mL Syrup Sig: Wr",
+      "parsed": {
+        "filled_text": "Name:  Kieran Maddox                 Unit No:   9033912\n \nAdmission Date:  2025-09-01              Discharge Date:   2025-09-10\n \nDate of Birth:  1996-06-11             Sex:   M\n \nService: SURGERY\n \nAllergies: \nPatient recorded as having No Known Allergies to Drugs\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1. Roxicet Phillips mg/5 mL Solution Sig: Turner ml PO every four (4) \nhours as needed for pain.\nDisp:*500 ml* Refills:*0*\n2. Colace 60 mg/15 mL Syrup Sig: Wright (25) ml PO twice a \nday.\nDisp:*500 ml* Refills:*2*\n3. Zantac 15 mg/mL Syrup Sig: Ten (10) ml PO twice a day.\nDisp:*250 ml* Refills:*2*\n4. Actigall 300 mg Capsule Sig: One (1) Capsule PO twice a day: \nEmpty capsule in water and mix.\nDisp:*60 Capsule(s)* Refills:*4*\n5. Multivitamin     Tablet, Chewable Sig: One (1) Tablet, \nChewable PO once a day.  \n6. Vitamin D-3 1,000 unit Tablet, Chewable Sig: One (1) Tablet, \nChewable PO once a day.  \n7. Lisinopril 20 mg Tablet Sig: Moore Tablet PO once a day: please \ncrush.  \n8. Metformin 1,000 mg Tablet Sig: Lopez Tablet PO twice a day: \nplease crush.  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\n1. Obstructive sleep apnea.\n2. Morbid obese\n3. Diabetes mellitus type 2.\n4. Hypertension.\n5. Acute blood loss anemia\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\nDischarge Instructions: Please call your surgeon or return to \nthe emergency department if you develop a fever greater than \n101.5, chest pain, shortness of breath, severe abdominal pain, \npain unrelieved by your pain medication, severe nausea or \nvomiting, severe abdominal bloating, inability to eat or drink, \nfoul smelling or colorful drainage from your incisions, redness \nor swelling around your incisions, or any other symptoms which \nare concerning to you.\n\nDiet: Stay on Stage III diet until your follow up appointment. \nDo not self advance\ndiet, do not drink out of a straw or chew gum.\n\nMedication Instructions:\nResume your home medications, CRUSH ALL PILLS.\nYou will be starting some new medications:\n1.  You are being discharged on medications to treat the pain \nfrom your operation. These medications will make you drowsy and \nimpair your ability to drive a motor vehicle or operate \nmachinery safely. You MUST refrain from such activities while \ntaking these medications.\n2. You should begin taking a chewable complete multivitamin with \nminerals. No gummy vitamins.\n3. You will be taking Zantac liquid Mitchell mg twice daily for one \nmonth. This medicine prevents gastric reflux.\n4. You will be taking Actigall 300 mg twice daily for 6 months. \nThis medicine prevents you from having problems with your \ngallbladder.\n5. You should take a stool softener, Colace, twice daily for \nconstipation as needed, or until you resume a normal bowel \npattern.\n6. You must not use NSAIDS (non-steroidal anti-inflammatory \ndrugs) Examples are Ibuprofen, Motrin, Aleve, Nuprin and \nNaproxen. These agents will cause bleeding and ulcers in your \ndigestive system.\n7. Check your blood sugars 4 times a day and record.  Bring the \nreadings with you to your appointment at Parker General Hospital. next \nweek.\n8. Have your blood pressure checked next week.  You are on half \nyour normal dose of Lisinopril so it may need to be adjusted.\n\nActivity:\nNo heavy lifting of items Baker pounds for 6 weeks. You may \nresume moderate\nexercise at your discretion, no abdominal exercises.\n\nWound Care:\nWear your abdominal binder at all times.\nYou may shower, no tub baths or swimming. \nIf there is clear drainage from your incisions, cover with \nclean, dry gauze. \nYour steri-strips will fall off on their own. Please remove any \nremaining strips Lee days after surgery.\nPlease call the doctor if you have increased pain, swelling, \nredness, or drainage from the incision sites. \n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Wellesley in 3 weeks to discuss test results and assess the effectiveness of your current treatment plan. During this visit, she will also provide further instructions and guidance on managing your obstructive sleep apnea.",
+        "pii_mappings": {
+          "Kieran Maddox": {
+            "type": "NAME"
+          },
+          "9033912": {
+            "type": "ID"
+          },
+          "2025-09-01": {
+            "type": "DATE"
+          },
+          "2025-09-10": {
+            "type": "DATE"
+          },
+          "1996-06-11": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Parker General Hospital": {
+            "type": "HOSPITAL"
+          },
+          "Phillips": {
+            "type": "NAME"
+          },
+          "Turner": {
+            "type": "NAME"
+          },
+          "Wright": {
+            "type": "NAME"
+          },
+          "Moore": {
+            "type": "NAME"
+          },
+          "Lopez": {
+            "type": "NAME"
+          },
+          "Mitchell": {
+            "type": "NAME"
+          },
+          "Baker": {
+            "type": "NAME"
+          },
+          "Lee": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Kieran Maddox",
+          "9033912",
+          "2025-09-01",
+          "2025-09-10",
+          "1996-06-11",
+          "Julianne Wellesley",
+          "Parker General Hospital",
+          "Julianne Wellesley",
+          "Phillips",
+          "Turner",
+          "Wright",
+          "Moore",
+          "Lopez",
+          "Mitchell",
+          "Baker",
+          "Lee"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 13,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kai Rylan                    Unit No:   7850620\n \nAdmission Date:  2025-11-23              Discharge Date:   2025-12-01\n \nDate of Birth:  1998-06-08             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nPatient recorded as having No Known Allergies to Drugs\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1. Morphine 20 mg/5 mL Solution Sig: Five (5) mg PO every four \n(4) hours as needed for pain or resp distress.\nDisp:*30 mL* Refills:*0*\n2. Ativan 0.5 mg Table",
+      "parsed": {
+        "filled_text": "Name:  Kai Rylan                    Unit No:   7850620\n \nAdmission Date:  2025-11-23              Discharge Date:   2025-12-01\n \nDate of Birth:  1998-06-08             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nPatient recorded as having No Known Allergies to Drugs\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1. Morphine 20 mg/5 mL Solution Sig: Five (5) mg PO every four \n(4) hours as needed for pain or resp distress.\nDisp:*30 mL* Refills:*0*\n2. Ativan 0.5 mg Tablet Sig: One (1) Tablet PO every eight (8) \nhours as needed for agitation.\nDisp:*8 Tablet(s)* Refills:*0*\n3. Please Screen and admit to Hospice\n4. Dicloxacillin 500 mg Capsule Sig: One (1) Capsule PO four \ntimes a day for 3 weeks.\nDisp:*84 Capsule(s)* Refills:*0*\n5. Docusate Sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 \ntimes a day).  \n6. Senna 8.6 mg Tablet Sig: Martinez Tablets PO BID (2 times a day) \nas needed for constipation.  \n7. Lasix 20 mg Tablet Sig: One (1) Tablet PO once a day.  \n\n \nDischarge Disposition:\nHome With Service\n \nFacility:\nVisiting Nurse Association\n \nDischarge Diagnosis:\nMSSA Bacteremia\nBenign prostatic hypertrophy, chronic indwelling foley catheter\nh/o Stroke\n\n \nDischarge Condition:\nMental Status:Clear and coherent\nLevel of Consciousness:Alert and interactive\nActivity Status:Out of Bed with assistance to chair or \nwheelchair\n\n \nDischarge Instructions:\nYou were admitted with fever.  You were found to have a \nbacterial infection in your blood, called \"MSSA.\"  A PICC IV was \nplaced to give antibiotics.  As we discussed, we strongly \nrecommend that you go to a rehab and received an extended course \nof antibiotics, but you have elected to go home with oral \nantibiotics and hospice.  Your primary care doctor is aware of \nthis plan and can still follow you after you leave. Please \ncomplete the entire antibiotic course. \n \nFollowup Instructions:\nReturn to see Dr. Julianne Wellesley in 2 weeks for a re-evaluation of your MSSA bacteremia and to discuss further treatment options as needed. Please schedule this appointment by calling our office at least 24 hours in advance.",
+        "pii_mappings": {
+          "Kai Rylan": {
+            "type": "NAME"
+          },
+          "7850620": {
+            "type": "ID"
+          },
+          "2025-11-23": {
+            "type": "DATE"
+          },
+          "2025-12-01": {
+            "type": "DATE"
+          },
+          "1998-06-08": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Visiting Nurse Association": {
+            "type": "FACILITY"
+          },
+          "Martinez": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Kai Rylan",
+          "7850620",
+          "2025-11-23",
+          "2025-12-01",
+          "1998-06-08",
+          "Julianne Wellesley",
+          "Visiting Nurse Association",
+          "Julianne Wellesley",
+          "Martinez"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 14,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Marquez                   Unit No:   2591549\n \nAdmission Date:  2025-10-24              Discharge Date:   2025-11-21\n \nDate of Birth:  1975-04-18             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nAspirin\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1. Outpatient Lab Work\nPlease check sodium and hematocrit Rodriguez. Please fax results \nto Dr. Hernandez at Lincoln Park Community Healthcare System: Williams \n \n2. fluticasone 50 mcg/Actuation Spray, S",
+      "parsed": {
+        "filled_text": "Name:  Astrid Marquez                   Unit No:   2591549\n \nAdmission Date:  2025-10-24              Discharge Date:   2025-11-21\n \nDate of Birth:  1975-04-18             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nAspirin\n \nAttending: Dr. Julianne Marquez\n\nDischarge Medications:\n1. Outpatient Lab Work\nPlease check sodium and hematocrit Rodriguez. Please fax results \nto Dr. Hernandez at Lincoln Park Community Healthcare System: Williams \n \n2. fluticasone 50 mcg/Actuation Spray, Suspension Sig: Two (2) \nSpray Nasal DAILY (Daily).  \n3. levothyroxine 75 mcg Tablet Sig: One (1) Tablet PO DAILY \n(Daily).  \n4. simvastatin 40 mg Tablet Sig: One (1) Tablet PO DAILY \n(Daily).  \n5. sodium chloride 1 gram Tablet Sig: One (1) Tablet PO DAILY \n(Daily).  \n6. valsartan 160 mg Tablet Sig: Two (2) Tablet PO DAILY (Daily). \n \n7. docusate sodium 100 mg Capsule Sig: One (1) Capsule PO BID (2 \ntimes a day).  \n8. nystatin-triamcinolone 100,000-0.1 unit/g-% Cream Sig: One \n(1) appl Topical twice a day as needed for Rash.  \n9. aspirin 81 mg Tablet Sig: One (1) Tablet PO once a day.  \n10. Calcium Citrate + D 315-200 mg-unit Tablet Sig: One (1) \nTablet PO once a day.  \n11. calcium carbonate 500 mg (1,250 mg) Tablet Sig: One (1) \nTablet PO once a day.  \n12. B Complex     Tablet Extended Release Sig: One (1) Tablet \nExtended Release PO once a day.  \n13. loratadine 10 mg Tablet Sig: One (1) Tablet PO once a day.  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nPrimary: \nHyponatremia\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - requires assistance or aid (walker \nor cane).\n\n \nDischarge Instructions:\nMs. Marquez, \n\nIt was a pleasure taking part in your care. You were admitted to \nMcClure with increased lethargy and generally feeling unwell. You \nwere found to have a low salt level in your blood which can \ncause these symptoms. We gave your IV fluids, and limited the \namount you should drink as well as put you back on your salt \ntablets. \n\nYour salt level increased and you felt much improved. \n\nWe did not make any changes to your medications.\n\nPlease take your medications as prescribed.\n\nPlease have blood work drawn on January 12, 2026 to be sent to Dr. Gonzalez.\n \nFollowup Instructions:\nFollow up with Dr. Julianne Marquez in 4 weeks to review lab results and assess response to treatment, or sooner if symptoms persist or worsen.",
+        "pii_mappings": {
+          "Astrid Marquez": {
+            "type": "NAME"
+          },
+          "2591549": {
+            "type": "ID"
+          },
+          "2025-10-24": {
+            "type": "DATE"
+          },
+          "2025-11-21": {
+            "type": "DATE"
+          },
+          "1975-04-18": {
+            "type": "DATE"
+          },
+          "Julianne Marquez": {
+            "type": "NAME"
+          },
+          "Hernandez": {
+            "type": "NAME"
+          },
+          "Lincoln Park Community Healthcare System": {
+            "type": "HOSPITAL"
+          },
+          "Rodriguez": {
+            "type": "NAME"
+          },
+          "Williams": {
+            "type": "NAME"
+          },
+          "Gonzalez": {
+            "type": "NAME"
+          },
+          "McClure": {
+            "type": "NAME"
+          },
+          "January 12, 2026": {
+            "type": "DATE"
+          }
+        },
+        "filled_values": [
+          "Astrid Marquez",
+          "2591549",
+          "2025-10-24",
+          "2025-11-21",
+          "1975-04-18",
+          "Julianne Marquez",
+          "Hernandez",
+          "Lincoln Park Community Healthcare System",
+          "Julianne Marquez",
+          "Rodriguez",
+          "Williams",
+          "Gonzalez",
+          "McClure",
+          "January 12, 2026"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 15,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Jensen                     Unit No:   5622189\n \nAdmission Date:  2024-05-18              Discharge Date:   2024-05-21\n \nDate of Birth:  1999-04-10             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nSulfa (Sulfonamide Antibiotics) / Ultram\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Acetaminophen 1000 mg PO Q8H  \n2.  HYDROmorphone (Dilaudid) 2 mg PO Q6H:PRN Pain - Moderate  \n3.  Lidocaine 5% Patch 1 PTCH TD QAM  \n4.  Methocarbamol 1000 mg PO Q",
+      "parsed": {
+        "filled_text": "Name:  Astrid Jensen                     Unit No:   5622189\n \nAdmission Date:  2024-05-18              Discharge Date:   2024-05-21\n \nDate of Birth:  1999-04-10             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nSulfa (Sulfonamide Antibiotics) / Ultram\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Acetaminophen 1000 mg PO Q8H  \n2.  HYDROmorphone (Dilaudid) 2 mg PO Q6H:PRN Pain - Moderate  \n3.  Lidocaine 5% Patch 1 PTCH TD QAM  \n4.  Methocarbamol 1000 mg PO QID  \n5.  Methylprednisolone 4 mg PO DAILY \n1tab PO with dinner and 2tabs QHS on October 4, 2024 tab QID \nMcClure TID BID Lopez    \n6.  Albuterol Inhaler 1 PUFF IH Q6H:PRN SOB/wheeze  \n7.Outpatient Physical Therapy\nICD: 10 Thompson.02\nPatient would benefit from physical therapy for neck pain likely \nAnderson muscle pain and cervical stenosis. \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nAcute on chronic neck pain\n\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n\n \nDischarge Instructions:\n======================  \nDISCHARGE INSTRUCTIONS  \n======================  \nDear Ms. Jensen, \n \nIt was a privilege caring for you at Westbrook Medical Center.  \n\nWHY WAS I IN THE HOSPITAL?  \n- You were admitted to the hospital for severe neck pain\n\nWHAT HAPPENED TO ME IN THE HOSPITAL?  \n- You were evaluated by the orthopedic spinal team in the ED who \nrecommended a Medrol (steroid) taper and pain management\n- You did not need urgent surgery based on your exam and MRI \nresults \n- You were given pain medications to manage your pain and worked \nwith physical therapy \n\nWHAT SHOULD I DO AFTER I LEAVE THE HOSPITAL?  \n-Please continue to take all of your medications and follow-up \nwith your appointments as listed below.  \n- Please re-connect with a primary care doctor and start \noutpatient physical therapy.\n\nWe wish you the best!  \n\nSincerely,  \n\nYour Westbrook Medical Center Team  \n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Wellesley in 4 weeks to assess progress and adjust treatment plan as needed, or sooner if symptoms worsen.",
+        "pii_mappings": {
+          "Astrid Jensen": {
+            "type": "NAME"
+          },
+          "5622189": {
+            "type": "ID"
+          },
+          "2024-05-18": {
+            "type": "DATE"
+          },
+          "2024-05-21": {
+            "type": "DATE"
+          },
+          "1999-04-10": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Jensen": {
+            "type": "NAME"
+          },
+          "Westbrook Medical Center": {
+            "type": "HOSPITAL"
+          },
+          "October 4, 2024": {
+            "type": "DATE"
+          },
+          "McClure": {
+            "type": "NAME"
+          },
+          "Lopez": {
+            "type": "NAME"
+          },
+          "Thompson": {
+            "type": "NAME"
+          },
+          "Anderson": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Astrid Jensen",
+          "5622189",
+          "2024-05-18",
+          "2024-05-21",
+          "1999-04-10",
+          "Julianne Wellesley",
+          "Jensen",
+          "Westbrook Medical Center",
+          "Julianne Wellesley",
+          "October 4, 2024",
+          "McClure",
+          "Lopez",
+          "Thompson",
+          "Anderson"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 16,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Aurora Wilder                  Unit No:   9789249\n \nAdmission Date:  2025-06-21              Discharge Date:   2025-07-15\n \nDate of Birth:  1951-09-14             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1. Acetaminophen Williams mg PO Q6H:PRN pain \n2. Docusate Sodium 100 mg PO BID \n3. Pantoprazole 40 mg PO Q12H \n4. GlipiZIDE XL 10 mg PO DAILY \n5. MetFORMIN (Glucophage",
+      "parsed": {
+        "filled_text": "Name:  Aurora Wilder                  Unit No:   9789249\n \nAdmission Date:  2025-06-21              Discharge Date:   2025-07-15\n \nDate of Birth:  1951-09-14             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1. Acetaminophen Williams mg PO Q6H:PRN pain \n2. Docusate Sodium 100 mg PO BID \n3. Pantoprazole 40 mg PO Q12H \n4. GlipiZIDE XL 10 mg PO DAILY \n5. MetFORMIN (Glucophage) 1000 mg PO BID \n6. Nitroglycerin SL 0.3 mg SL PRN chest pain \n7. Pioglitazone 15 mg PO DAILY \n8. Tricor *NF* (fenofibrate nanocrystallized) 145 mg ORAL DAILY \n9. Vitamin D 800 UNIT PO DAILY \n10. Levothyroxine Sodium 125 mcg PO DAILY \n11. Multivitamins 1 TAB PO DAILY \n12. Cefpodoxime Proxetil 400 mg PO Q12H Duration: 4 Days \n\n \nDischarge Disposition:\nExtended Care\n \nFacility:\nHome Health Services\n \nDischarge Diagnosis:\nHypothryoidism\nMechanical Fall\nMeningiomas\n\n \nDischarge Condition:\nMental Status: Confused - sometimes.\nLevel of Consciousness: Lethargic but arousable.\nActivity Status: Ambulatory - requires assistance or aid (walker \nor cane).\n\n \nDischarge Instructions:\nYou came to the hospital with a fall. You were found to have \nbleeding around one of your brain tumors. After repeat CT scans, \nthis was felt to be stable. \n\nWhile you were here, your thyroid function was found to be very \nlow. It appears you have not taken your thyroid medication for a \nlong period of time. Please start taking this medication and \nfolow-up with your Endocrinology Appointment listed below.\n\nPlease see all medication changes below.\n\nIt was a pleasure taking care of you, Ms Rodriguez.\n \nFollowup Instructions:\nSchedule a follow-up appointment with Dr. Julianne Wellesley in 4-6 weeks to monitor your progress and adjust treatment as needed for your primary diagnosis, Hypothryoidism. If you experience any worsening of symptoms or have concerns between appointments, please contact our office for guidance on next steps.",
+        "pii_mappings": {
+          "Aurora Wilder": {
+            "type": "NAME"
+          },
+          "9789249": {
+            "type": "ID"
+          },
+          "2025-06-21": {
+            "type": "DATE"
+          },
+          "2025-07-15": {
+            "type": "DATE"
+          },
+          "1951-09-14": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Home Health Services": {
+            "type": "FACILITY"
+          },
+          "Williams": {
+            "type": "NAME"
+          },
+          "Rodriguez": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Aurora Wilder",
+          "9789249",
+          "2025-06-21",
+          "2025-07-15",
+          "1951-09-14",
+          "Julianne Wellesley",
+          "Home Health Services",
+          "Julianne Wellesley",
+          "Williams",
+          "Rodriguez"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 17,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kieran Maddox                    Unit No:   7952184\n \nAdmission Date:  2025-07-20              Discharge Date:   2025-08-21\n \nDate of Birth:  1987-07-22             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Rutledge\n\nDischarge Medications:\n1. Rivaroxaban 20 mg PO DINNER \nRX *rivaroxaban [Xarelto] 20 mg 1 tablet(s) by mouth daily Disp \n#*30 Tablet Refills:*0\n2. Diltiazem Extended-Release 120 mg PO Q12H \n",
+      "parsed": {
+        "filled_text": "Name:  Kieran Maddox                    Unit No:   7952184\n \nAdmission Date:  2025-07-20              Discharge Date:   2025-08-21\n \nDate of Birth:  1987-07-22             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nNo Known Allergies / Adverse Drug Reactions\n \nAttending: Dr. Julianne Rutledge\n\nDischarge Medications:\n1. Rivaroxaban 20 mg PO DINNER \nRX *rivaroxaban [Xarelto] 20 mg 1 tablet(s) by mouth daily Disp \n#*30 Tablet Refills:*0\n2. Diltiazem Extended-Release 120 mg PO Q12H \nRX *diltiazem HCl 120 mg 1 capsule(s) by mouth every twelve (12) \nhours Disp #*60 Capsule Refills:*0\n3. Furosemide 20 mg PO DAILY \nRX *furosemide 20 mg 1 tablet(s) by mouth once a day Disp #*30 \nTablet Refills:*0\n4. Metoprolol Succinate XL 200 mg PO Q12H \nRX *metoprolol succinate 200 mg 1 tablet(s) by mouth every \ntwelve (12) hours Disp #*60 Tablet Refills:*0\n5. Spironolactone 25 mg PO DAILY \nRX *spironolactone 25 mg 1 tablet(s) by mouth once a day Disp \n#*30 Tablet Refills:*0\n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\n- Atrial flutter\n- Acute diastolic CHF \n- Obstructive sleep apnea\n- morbid obesity\n \nDischarge Condition:\nMental Status: Clear and coherent.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - Independent.\n \nDischarge Instructions:\nDear Mr. Maddox,\n\nYou were admitted to the Turner after being found to have an \nabnormally fast heart rate.  Electrocardiogram (or EKG) of your \nheart showed that your heart was in a rhythm called atrial \nflutter.  You were given medications to help slow down your \nheart; these medications are Diltiazem and Metoprolol.  You were \nalso started on a blood thinner called Xarelto (rivaroxaban); \nthis is to prevent blood clots from forming in your heart and \ncausing a stroke, which is sometimes a complication associated \nwith the irregular rhythm. \nPlease do not discontinue any of these medications until \ninstructed to do so by a cardiologist.\n\nYou were also started on two medications to help reduce the \nswelling in your legs.   Your doctors Lee to come in for \nblood work from time to time to assess your electrolytes.\n\nFinally, you were seen by nutrition for dietary education. You \nhad liver enzymes that were normal.\n\nIt was a pleasure taking part in your care,\nYour Miller Team\n \nFollowup Instructions:\nFollow up with Dr. Julianne Rutledge in 3-4 weeks to monitor your progress and adjust treatment as needed for your atrial flutter and acute diastolic CHF. If you experience any worsening symptoms or have concerns between appointments, please contact our office for guidance.",
+        "pii_mappings": {
+          "Kieran Maddox": {
+            "type": "NAME"
+          },
+          "7952184": {
+            "type": "ID"
+          },
+          "2025-07-20": {
+            "type": "DATE"
+          },
+          "2025-08-21": {
+            "type": "DATE"
+          },
+          "1987-07-22": {
+            "type": "DATE"
+          },
+          "Julianne Rutledge": {
+            "type": "NAME"
+          },
+          "Maddox": {
+            "type": "NAME"
+          },
+          "Turner": {
+            "type": "NAME"
+          },
+          "Lee": {
+            "type": "NAME"
+          },
+          "Miller": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Kieran Maddox",
+          "7952184",
+          "2025-07-20",
+          "2025-08-21",
+          "1987-07-22",
+          "Julianne Rutledge",
+          "Maddox",
+          "Julianne Rutledge",
+          "Turner",
+          "Lee",
+          "Miller"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 18,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Astrid Jensen               Unit No:   9993723\n \nAdmission Date:  2025-02-20              Discharge Date:   2025-03-15\n \nDate of Birth:  1958-10-25             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nSulfa (Sulfonamide Antibiotics) / nitrofurantoin\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Cefpodoxime Proxetil 400 mg PO Q12H Duration: 2 Doses \nGive on September 1, 2024.  Metoprolol Succinate XL 25 mg PO DAILY  \n3.  TraMADol 50 mg PO TID:PRN Pain - ",
+      "parsed": {
+        "filled_text": "Name:  Astrid Jensen               Unit No:   9993723\n \nAdmission Date:  2025-02-20              Discharge Date:   2025-03-15\n \nDate of Birth:  1958-10-25             Sex:   F\n \nService: MEDICINE\n \nAllergies: \nSulfa (Sulfonamide Antibiotics) / nitrofurantoin\n \nAttending: Dr. Julianne Wellesley\n\nDischarge Medications:\n1.  Cefpodoxime Proxetil 400 mg PO Q12H Duration: 2 Doses \nGive on September 1, 2024.  Metoprolol Succinate XL 25 mg PO DAILY  \n3.  TraMADol 50 mg PO TID:PRN Pain - Moderate  \n4.  Acetaminophen 1000 mg PO Q8H  \n5.  Aspirin 81 mg PO DAILY  \n6.  Atorvastatin 40 mg PO QPM  \n7.  Bisacodyl HillAILY:PRN constipation  \n8.  Calcium 500 + D (calcium carbonate-vitamin D3) 500 \nmg(1,250mg) -200 unit oral DAILY  \n9.  Docusate Sodium 100 mg PO BID  \n10.  Donepezil 5 mg PO QHS  \n11.  DULoxetine 60 mg PO DAILY  \n12.  Florastor (Saccharomyces boulardii) 250 mg oral BID  \n13.  Loratadine 10 mg PO DAILY  \n14.  Milk of Magnesia 30 mL PO PRN constipation  \n15.  Multivitamins 1 TAB PO DAILY  \n16.  Nitroglycerin SL 0.4 mg SL Q5MIN:PRN chest pain  \n17.  Omeprazole 20 mg PO BID  \n18.  Ondansetron 4 mg PO Q8H:PRN nausea  \n19.  Senna 17.2 mg PO BID  \n20. HELD- Gabapentin 100 mg PO QHS  This medication was held. Do \nnot restart Gabapentin until talking with your PCP\n21. HELD- Lisinopril 10 mg PO DAILY  This medication was held. \nDo not restart Lisinopril until talking with your PCP\n\n \nWright:\nExtended Care\n \nFacility:\nHome Health Services\n \nDischarge Diagnosis:\nSmall left frontal SAH\nT12 compression fracture\nUrinary tract infection\nAcute right L1 transverse process fracture and T10/T11 spinous \nprocess fractures. \n\n \nDischarge Condition:\nMental Status: Confused - sometimes.\nLevel of Consciousness: Alert and interactive.\nActivity Status: Ambulatory - requires assistance or aid (walker \nor cane).\n\n \nDischarge Instructions:\nDear Ms. Jensen,\n\nYou were admitted to the hospital after you fell and hit your \nhead. You had a bleed in your brain but did not need surgery. \nYou were found to have a small fracture in one of the small \nbones in your back but this was thought to have been present \nbefore you fell. You will follow up with spine doctors after March 1, 2024 \nleave the hospital for this. You also hit your arm and hip but \ndid not have any broken bones. \n\nYou were found to have a urinary tract infection and treated \nwith antibiotics. This may have contributed to your fall. You \nalso were found to have low blood pressure when you stand up, so \nyour blood pressure medications stopped. You can discuss \nrestarting them with your primary care doctor.\n\nYou were found to be anemic (to have low blood counts) and got a \nblood transfusion. Your blood counts were stable after this. You \nmay need further evaluation of your anemia by your primary care \ndoctor unless this has already been done.\n\nIt was a pleasure participating in your care. We wish you all \nthe best in the future!\n\nSincerely,\n\nYour Brown team\n\n \nFollowup Instructions:\nFollow up with Dr. Julianne Wellesley in 1 week to review lab results and discuss further management of your small left frontal SAH diagnosis. Please contact our office if you experience any worsening of symptoms or concerns between now and then.",
+        "pii_mappings": {
+          "Astrid Jensen": {
+            "type": "NAME"
+          },
+          "9993723": {
+            "type": "ID"
+          },
+          "2025-02-20": {
+            "type": "DATE"
+          },
+          "2025-03-15": {
+            "type": "DATE"
+          },
+          "1958-10-25": {
+            "type": "DATE"
+          },
+          "Julianne Wellesley": {
+            "type": "NAME"
+          },
+          "Jensen": {
+            "type": "NAME"
+          },
+          "September 1, 2024": {
+            "type": "DATE"
+          },
+          "Home Health Services": {
+            "type": "FACILITY"
+          },
+          "Hill": {
+            "type": "NAME"
+          },
+          "Wright": {
+            "type": "NAME"
+          },
+          "March 1, 2024": {
+            "type": "DATE"
+          },
+          "Brown": {
+            "type": "NAME"
+          }
+        },
+        "filled_values": [
+          "Astrid Jensen",
+          "9993723",
+          "2025-02-20",
+          "2025-03-15",
+          "1958-10-25",
+          "Julianne Wellesley",
+          "Jensen",
+          "Julianne Wellesley",
+          "September 1, 2024",
+          "Home Health Services",
+          "Hill",
+          "Wright",
+          "March 1, 2024",
+          "Brown"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    },
+    {
+      "index": 19,
+      "raw_output_preview": "[FILLED RECORD]\nName:  Kieran Maddox              Unit No:   2163298\n \nAdmission Date:  2025-05-10              Discharge Date:   2025-05-14\n \nDate of Birth:  1946-04-23             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nPenicillins / Erythromycin Base / Streptomycin / Citric Acid / \nAtenolol\n \nAttending: Dr. Julianne Rykhard\n\nDischarge Medications:\n1. Lisinopril 5 mg Tablet Sig: One (1) Tablet PO DAILY (Daily).  \n\n2. Metoprolol Succinate 25 mg Tablet Sustained Release 24 hr \nSig: One (1) Ta",
+      "parsed": {
+        "filled_text": "Name:  Kieran Maddox              Unit No:   2163298\n \nAdmission Date:  2025-05-10              Discharge Date:   2025-05-14\n \nDate of Birth:  1946-04-23             Sex:   M\n \nService: MEDICINE\n \nAllergies: \nPenicillins / Erythromycin Base / Streptomycin / Citric Acid / \nAtenolol\n \nAttending: Dr. Julianne Rykhard\n\nDischarge Medications:\n1. Lisinopril 5 mg Tablet Sig: One (1) Tablet PO DAILY (Daily).  \n\n2. Metoprolol Succinate 25 mg Tablet Sustained Release 24 hr \nSig: One (1) Tablet Sustained Release 24 hr PO DAILY (Daily).  \n3. Furosemide 20 mg Tablet Sig: One (1) Tablet PO QPM.  \n4. Pantoprazole 40 mg Tablet, Delayed Release (E.C.) Sig: One \n(1) Tablet, Delayed Release (E.C.) PO twice a day for 4 weeks: \nPlease take until you see Dr. Jensen.\nDisp:*60 Tablet, Delayed Release (E.C.)(s)* Refills:*0*\n5. Amitriptyline 25 mg Tablet Sig: Two (2) Tablet PO HS (at \nbedtime).  \n6. Aspirin 81 mg Tablet, Delayed Release (E.C.) Sig: One (1) \nTablet, Delayed Release (E.C.) PO once a day.  \n7. Warfarin 2 mg Tablet Sig: One (1) Tablet PO twice a week \nEvans and Smith: Please restart warfarin on previous dosage \nschedule.  \n8. Outpatient Lab Work\nINR check on September 1, 2024.  \n9. Warfarin 2 mg Tablet Sig: Two (2) Tablet PO 5X/week \n(TWThSaSu): Resume warfarin on preivous schedule.  \n10. Furosemide 40 mg Tablet Sig: One (1) Tablet PO QAM.  \n\n \nDischarge Disposition:\nHome\n \nDischarge Diagnosis:\nPrimary Diagnosis:\n--------------------\nAcute blood loss anemia\nGastritis with bleeding in setting of multiple anti-coagulants\n.\nSecondary Diagnoses:\n--------------------\nCoronary Artery Disease\nChronic Systolic Heart Failure\nHypertension\n\n \nDischarge Condition:\nGood, tolerating PO's, with asymptomatic anemia and Hct stable \n>24 hours.  \n\n \nDischarge Instructions:\nYou were admitted to the hospital because you were bleeding into \nyour gastrointestinal tract so that blood was showing up in your \ncolostomy bag.  The GI specialists passed a camera into your \nstomach (endoscopy) and saw some irritation of the lining of \nyour stomach called gastritis.  We will medically manage this by \ngiving you the acid blocking medicine (proton pump inhibitor) \nand by decreasing the number of medications you are on that \nencourage bleeding.  You will follow up in the GI clinic as \nwell.  As your blood counts were stable we are now discharging \nyou to complete your recovery at home.  \n\nYour medications have been changed.  Your CLOPIDOGREL (PLAVIX) \nhas been stopped; this was discussed with your cardiologist who \nagreed;  as you are now far enough out from your stent placement \nthat this medication is not necessary.  \nYou have also been started on the proton pump inhibitor for \nblocking stomach acid.  This medication is called PANTOPRAZOLE \n(PROTONIX).  Please continue to take all other medications as \nprescribed.  We recommend you avoid alcohol for the next few \nweeks as your stomach lining heals.  \n\nPlease keep all scheduled follow-up appointments as these are \nimportant to help manage your health.  You will also need to \nhave your INR rechecked next week as you were off this \nmedication in the hospital and your dose will need to be \nre-titrated.  \n\nPlease call your doctor or go to the Emergency Room if you have \nfever>101, chest pain, shortness of breath, further black or red \nmaterial in your ostomy bag, intractable nausea/vomiting, \nlightheadedness, fainting, or other concerning changes to your \nhealth.\n\nRegarding your heart failure, you should weigh yourself every \nmorning and contact your doctor if your weight changes > 3 lbs \nover the course of 24 hours.  Please limit your salt intake to 2 \ngms/day.  \n \nFollowup Instructions:\nFollow up with Dr. Julianne Rykhard in 2 weeks for a re-evaluation of your acute blood loss anemia and to discuss any further treatment options as needed. Please schedule this appointment by calling our office at least one day prior to ensure availability.",
+        "pii_mappings": {
+          "Kieran Maddox": {
+            "type": "NAME"
+          },
+          "2163298": {
+            "type": "ID"
+          },
+          "2025-05-10": {
+            "type": "DATE"
+          },
+          "2025-05-14": {
+            "type": "DATE"
+          },
+          "1946-04-23": {
+            "type": "DATE"
+          },
+          "Julianne Rykhard": {
+            "type": "NAME"
+          },
+          "Jensen": {
+            "type": "NAME"
+          },
+          "Evans": {
+            "type": "NAME"
+          },
+          "Smith": {
+            "type": "NAME"
+          },
+          "September 1, 2024": {
+            "type": "DATE"
+          }
+        },
+        "filled_values": [
+          "Kieran Maddox",
+          "2163298",
+          "2025-05-10",
+          "2025-05-14",
+          "1946-04-23",
+          "Julianne Rykhard",
+          "Jensen",
+          "Julianne Rykhard",
+          "Evans",
+          "Smith",
+          "September 1, 2024"
+        ]
+      },
+      "checks": {
+        "format": {
+          "pass": true,
+          "errors": []
+        },
+        "placeholder_residual": {
+          "pass": true,
+          "remaining_count": 0
+        },
+        "date_logic": {
+          "pass": true,
+          "errors": []
+        },
+        "name_consistency": {
+          "pass": true,
+          "errors": []
+        },
+        "mapping_consistency": {
+          "pass": true,
+          "errors": []
+        }
+      }
+    }
+  ]
+}
